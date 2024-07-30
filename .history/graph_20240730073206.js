@@ -64,23 +64,11 @@ class Graph {
   // this function returns an array of Node values using BFS
   breadthFirstSearch(start) {
     const queue = [start];
-    const visited = new Set();
-    const result = [];
+    const visited= new Set();
 
-    visited.add(start);
-
-    while (queue.length) {
-      const node = queue.shift();
-      result.push(node.value);
-
-      node.adjacent.forEach((neighbor) => {
-        if (!visited.has(neighbor)) {
-          visited.add(neighbor);
-          queue.push(neighbor);
-        }
-      });
+    while (queue.length >0){
+      const 
     }
-    return result;
   }
 }
 
